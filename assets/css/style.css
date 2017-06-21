@@ -100,7 +100,6 @@ li {
 	float: left;
 	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	/*position: absolute;*/
 }
 
 h2 {
@@ -196,7 +195,6 @@ input[type=text] {
 textarea{
 	margin-top: 8px;
 	width:100%;
-	/*resize: none;*/
 }
 
 input[type=submit] {
@@ -236,14 +234,10 @@ input[type=submit] {
 /*adding media queries*/
 
 @media screen and (max-width:980px){
-	/* Does this mean that anything bigger 
-	than 980 should look like the original design 
-	and anything less should look different?*/
+	
 	.full-about, .full-contact {
 		height:125%;
-		/*this doesn't seem right - how to get
-		the background to extend as long as the 
-		content?*/
+		/*had to make pages different heights to keep the footer in the right spot.*/
 	}
 	.full-portfolio{
 		height:260%;
@@ -269,10 +263,14 @@ input[type=submit] {
 		width:90%;
 	}
 
+	/*takes up 90% of the portfolio width*/
+
 	#hangmanpic, #rpgpic, #triviapic, #rutgerspic, #rockpic{
 		width:100%;
 		
 	}
+
+	/*Takes up 100% of the image div*/
 
 	#hangman, #rpg-game, #trivia-game, #rutgers, #rock-paper{
 		padding:10px;
@@ -293,6 +291,8 @@ input[type=submit] {
 	.full-portfolio{
 		height:170%;
 	}
+	/*Adjust portfolio page to fit content*/
+
 	#main-bio, #contact-message, #portfolio-page {
 		width:90%;
 		margin-left:20px;
@@ -304,6 +304,8 @@ input[type=submit] {
 		position:relative;
 		margin-left:20px;
 	}
+
+/*Both main section and the connection side-section take up most of the width of the page at this screen size*/
 
 	#bio-image{
 		width:30%;
@@ -348,6 +350,7 @@ input[type=submit] {
 		text-align:center;
 	}
 	
+	/*brought navigation buttons under the name section for this screen size*/
 	.full-about {
 		height:160%;
 	}
